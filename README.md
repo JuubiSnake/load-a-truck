@@ -8,7 +8,7 @@ The following endpoints are available:
 
 ### PARCELS
 
-#### POST /rest/v1/parcels
+#### POST /rest/v1/parcels
 
 This endpoint creates parcels:
 
@@ -23,7 +23,7 @@ $ curl localhost:8000/rest/v1/parcels -d '[{"id": "world", "weight": {"kg": 100}
 }  
 ```
 
-#### GET /rest/v1/parcels
+#### GET /rest/v1/parcels
 
 This endpoint lists all stored parcels:
 
@@ -38,7 +38,7 @@ $ curl localhost:8000/rest/v1/parcels
 }% 
 ```
 
-#### GET /rest/v1/parcels/:parcelID
+#### GET /rest/v1/parcels/:parcelID
 
 This endpoint gets a single parcel:
 
@@ -66,9 +66,9 @@ $ curl -XDELETE localhost:8000/rest/v1/parcels
 }% 
 ```
 
-### VEHICLES
+### VEHICLES
 
-#### POST /rest/v1/vehicles
+#### POST /rest/v1/vehicles
 
 This endpoint creates vehicles:
 
@@ -83,7 +83,7 @@ curl localhost:8000/rest/v1/vehicles -d '[{"id": "hello", "weightCapacity": {"kg
 }   
 ```
 
-#### GET /rest/v1/vehicles
+#### GET /rest/v1/vehicles
 
 This endpoint lists vehicles:
 
@@ -98,7 +98,7 @@ $ curl localhost:8000/rest/v1/vehicles
 }      
 ```
 
-#### GET /rest/v1/vehicles/:vehicleID
+#### GET /rest/v1/vehicles/:vehicleID
 
 This endpoint gets a single vehicle:
 
@@ -111,7 +111,7 @@ $ curl localhost:8000/rest/v1/vehicles/hello
 }
 ```
 
-#### PUT /rest/v1/vehicles/:vehicleID/parcels/load/:parcelID
+#### PUT /rest/v1/vehicles/:vehicleID/parcels/load/:parcelID
 
 This endpoint loads parcels onto a vehicle
 
@@ -137,7 +137,7 @@ curl -XPUT localhost:8000/rest/v1/vehicles/hello/parcels/unload/world
 }   
 ```
 
-#### DELETE /rest/v1/vehicles/:vehicleID
+#### DELETE /rest/v1/vehicles/:vehicleID
 
 This endpoint deletes all vehicles
 
@@ -150,7 +150,7 @@ curl -XDELETE localhost:8000/rest/v1/vehicles
 }
 ```
 
-## Development
+## Development
 
 In order to use this service you will need the following:
 
@@ -175,7 +175,7 @@ You can then spin up a hot-reloadable instance of the service by running:
 node run develop
 ```
 
-## Tests
+## Tests
 
 In order to run the available tests, run the following
 
