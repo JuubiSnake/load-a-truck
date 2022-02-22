@@ -182,3 +182,13 @@ In order to run the available tests, run the following
 ```shell
 npm run test
 ```
+
+## Future things
+ 
+It would of been nice to:
+
+- Have an integration test; unit tests prove system works in isolation, but not as a whole; could of written a simple bash script, but no time
+- Checked to see if a parcel is loaded on another truck before attempting to load
+- used PUT methods to perform updates for resources
+- spend a bit more time with TS; I'm a Go/Rust guy so a lot of this was getting up to speed with the language
+- include ESLINT, again, I would have had re-familarise myself with how to integrate it.
